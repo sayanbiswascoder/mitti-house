@@ -4,14 +4,16 @@ import { FaArrowRight } from "react-icons/fa";
 
 import section1 from "../assets/images/section1.jpg";
 import section2 from "../assets/images/section2.jpg";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
-  const windowHeight = useRef(window.innerHeight);
-  const windowWidth = useRef(window.innerWidth);
+  const windowHeight = useRef(0);
+  const windowWidth = useRef(0);
 
-  console.log("Window Height:", windowHeight);
-  console.log("Window Width:", windowWidth);
+  useEffect(() => {
+    windowHeight.current = window.innerHeight;
+    windowWidth.current = window.innerWidth;
+  }, []);
 
   // 
   return (
