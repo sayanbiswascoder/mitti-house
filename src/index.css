@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "InstrumentSerif";
+  src: url("./assets/fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InstrumentSerifItalic";
+  src: url("./assets/fonts/InstrumentSerif-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-instrument: "InstrumentSerif", sans-serif;
+}
